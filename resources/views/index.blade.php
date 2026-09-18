@@ -2583,11 +2583,11 @@ input:checked + .toggle-slider:before {
   </footer>
 
   <!-- Chatbot (UI uniquement) -->
-  <div class="chatbot-trigger" id="chatbotTrigger">
+  <button class="chatbot-trigger" id="chatbotTrigger" aria-label="Ouvrir le chat">
     <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
       <path d="M20 2H4C2.9 2 2 2.9 2 4V22L6 18H20C21.1 18 22 17.1 22 16V4C22 2.9 21.1 2 20 2ZM20 16H6L4 18V4H20V16Z" fill="currentColor"/>
     </svg>
-  </div>
+  </button>
 
   <div class="chatbot-window" id="chatbotWindow">
     <div class="chatbot-header">
@@ -2598,7 +2598,7 @@ input:checked + .toggle-slider:before {
           <div class="chatbot-status">En ligne</div>
         </div>
       </div>
-      <button class="chatbot-close" id="chatbotClose">×</button>
+      <button class="chatbot-close" id="chatbotClose" aria-label="Fermer le chat">×</button>
     </div>
     <div class="chatbot-messages">
       <div class="chatbot-message bot">
@@ -2609,7 +2609,7 @@ input:checked + .toggle-slider:before {
     </div>
     <div class="chatbot-input-container">
       <input type="text" class="chatbot-input" placeholder="Tapez votre message..." disabled>
-      <button class="chatbot-send" disabled>→</button>
+      <button class="chatbot-send" disabled aria-label="Envoyer le message">→</button>
     </div>
     <div class="chatbot-footer">
       Interface de démonstration — Fonctionnalité à venir
@@ -2622,7 +2622,7 @@ input:checked + .toggle-slider:before {
       <div class="modal-header">
         <div class="modal-tag">Nouvelle souscription</div>
         <h3 class="modal-title" id="modalTitle">Souscrire à cette offre</h3>
-        <button class="modal-close" id="modalClose">×</button>
+        <button class="modal-close" id="modalClose" aria-label="Fermer">×</button>
       </div>
       
       <div class="modal-steps">
@@ -2657,7 +2657,7 @@ input:checked + .toggle-slider:before {
   <!-- Modal Devis Detail -->
   <div class="modal-overlay" id="devisModal">
     <div class="modal-container modal-devis">
-      <button class="modal-close" id="devisModalClose">×</button>
+      <button class="modal-close" id="devisModalClose" aria-label="Fermer">×</button>
       <div id="devisModalContent"></div>
     </div>
   </div>
